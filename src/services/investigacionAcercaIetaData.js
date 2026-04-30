@@ -1,0 +1,135 @@
+import {
+  Award,
+  BookOpen,
+  Eye,
+  FileText,
+  GraduationCap,
+  Handshake,
+  Mail,
+  MapPin,
+  Microscope,
+  Phone,
+  Search,
+  Target,
+} from 'lucide-react'
+
+export const ietaHero = {
+  tag: 'INVESTIGACION APLICADA',
+  title: ['ACERCA', 'DEL IETA'],
+  subtitle:
+    'INSTITUTO DE ESTADISTICA TEORICA Y APLICADA. MOTOR CIENTIFICO DE LA CARRERA DE ESTADISTICA PARA LA GENERACION DE CONOCIMIENTO, INTERACCION SOCIAL Y SERVICIOS ESPECIALIZADOS.',
+  ctaPrimary: { label: 'CONOCE EL INSTITUTO', href: '#historia' },
+  ctaSecondary: { label: 'VER REGLAMENTO', href: '#reglamento', icon: FileText },
+  imageUrl:
+    'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=1200',
+}
+
+export const ietaQuickContact = [
+  {
+    title: 'CAMPUS UNIVERSITARIO',
+    detail: 'BLOQUE FCPN, 1ER PISO. CALLE 27 DE COTA COTA.',
+    icon: MapPin,
+    iconClassName: 'text-[#ea580c]',
+  },
+  {
+    title: 'LINEAS DE CONTACTO',
+    detail: '2612824 - 2612844',
+    icon: Phone,
+    iconClassName: 'text-blue-300',
+  },
+  {
+    title: 'CORREO OFICIAL',
+    detail: 'ieta@umsa.bo',
+    icon: Mail,
+    iconClassName: 'text-emerald-300',
+  },
+]
+
+export const ietaHistory = {
+  tag: 'RESEÑA HISTORICA',
+  title: 'ORIGEN Y CONSOLIDACION DEL IETA',
+  paragraphs: [
+    'BAJO LA VISION DEL DECANO LIC. LUIS ZAPATA ESCOBAR Y EL JEFE DE CARRERA LIC. RAUL MARQUIEGUI NAVARRO, EL IETA NACE PARA INCENTIVAR E INNOVAR LA INVESTIGACION E INTERACCION SOCIAL EN DOCENTES Y ESTUDIANTES, RECONOCIENDO A LA ESTADISTICA COMO CIENCIA TRANSVERSAL.',
+    'SU ACTIVIDAD PRINCIPAL ES PROMOVER LA INVESTIGACION ESTADISTICA EN BENEFICIO DE LA UMSA Y LA SOCIEDAD, CON PROYECTOS ORIENTADOS AL ANALISIS CUANTITATIVO PARA LA TOMA DE DECISIONES EN PLANES DE DESARROLLO SOCIAL Y ECONOMICO.',
+  ],
+  milestone: {
+    label: 'RESOLUCION N 082/94 DEL HCU',
+    detail: 'APROBACION OFICIAL DE REGLAMENTOS DEL INSTITUTO (1994).',
+    icon: Award,
+  },
+}
+
+export const ietaIdentity = {
+  mission: {
+    title: 'MISION',
+    symbol: 'MU',
+    icon: Target,
+    text: 'GENERAR CONOCIMIENTO CIENTIFICO MEDIANTE LA INVESTIGACION ESTADISTICA TEORICA Y APLICADA, CONTRIBUYENDO AL DESARROLLO TECNOLOGICO Y SOCIAL DEL PAIS, FORMANDO INVESTIGADORES DE ALTO NIVEL Y BRINDANDO SERVICIOS DE CONSULTORIA CON EXCELENCIA ACADEMICA.',
+  },
+  vision: {
+    title: 'VISION',
+    symbol: 'SIGMA',
+    icon: Eye,
+    text: 'SER EL INSTITUTO DE INVESTIGACION LIDER Y DE REFERENCIA NACIONAL E INTERNACIONAL EN CIENCIA ESTADISTICA, RECONOCIDO POR SU CALIDAD CIENTIFICA, APORTE A LA RESOLUCION DE PROBLEMAS NACIONALES Y DIFUSION DE CONOCIMIENTO DE VANGUARDIA.',
+  },
+}
+
+export const ietaObjectives = {
+  tag: 'LINEAS DE ACCION',
+  title: 'OBJETIVOS ESTRATEGICOS',
+  subtitle:
+    'EL IETA DESARROLLA INVESTIGACION CIENTIFICA MEDIANTE PROGRAMAS, PROYECTOS Y ACTIVIDADES CON PARTICIPACION ACTIVA DE DOCENTES Y ESTUDIANTES.',
+  cards: [
+    {
+      title: 'INVESTIGACION APLICADA',
+      description:
+        'PLANIFICAR, DESARROLLAR Y EJECUTAR PROYECTOS DE INVESTIGACION, INTERACCION SOCIAL Y EXTENSION UNIVERSITARIA.',
+      icon: Search,
+    },
+    {
+      title: 'SERVICIOS ESTRATEGICOS',
+      description:
+        'PRESTAR ASESORAMIENTO TECNICO A UNIDADES DEL SISTEMA UNIVERSITARIO Y ENTIDADES PUBLICAS Y PRIVADAS.',
+      icon: Handshake,
+    },
+    {
+      title: 'FORMACION INTEGRAL',
+      description:
+        'COADYUVAR EN LA FORMACION APLICADA E INVESTIGATIVA DE LOS ESTUDIANTES MEDIANTE PARTICIPACION DIRECTA EN PROYECTOS.',
+      icon: GraduationCap,
+    },
+    {
+      title: 'INCENTIVO DOCENTE',
+      description:
+        'FORTALECER LA ACTIVIDAD INVESTIGATIVA Y LA INTERACCION SOCIAL DEL PLANTEL DOCENTE DE LA CARRERA.',
+      icon: Award,
+    },
+    {
+      title: 'DIFUSION CIENTIFICA',
+      description:
+        'PROMOVER Y RECOMENDAR LA PUBLICACION DE REVISTAS, ARTICULOS CIENTIFICOS Y TESIS DE ALTO IMPACTO.',
+      icon: BookOpen,
+    },
+    {
+      title: 'CULTURA DE EVIDENCIA',
+      description:
+        'IMPULSAR EL USO DE INDICADORES, MODELOS Y ANALITICA PARA DECISIONES INSTITUCIONALES Y SOCIALES.',
+      icon: Microscope,
+    },
+  ],
+}
+
+export const ietaRegulation = {
+  tag: 'MARCO LEGAL',
+  title: 'REGLAMENTO INTERNO DEL IETA',
+  description:
+    'ACCEDE AL DOCUMENTO NORMATIVO OFICIAL QUE RIGE EL FUNCIONAMIENTO, LA ESTRUCTURA ADMINISTRATIVA, DEBERES Y PROCESOS DE INVESTIGACION DEL INSTITUTO DE ESTADISTICA TEORICA Y APLICADA.',
+  primaryCta: {
+    label: 'VISUALIZAR EN NAVEGADOR',
+    href: 'https://ieta.umsa.bo/reglamento-interno',
+  },
+  secondaryCta: {
+    label: 'DESCARGAR PDF',
+    href: 'https://ieta.umsa.bo/reglamento-interno',
+  },
+}

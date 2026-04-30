@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .render-optimized {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1200px;
+  }
+
+  .img-official-archive {
+    @apply grayscale-[0.7] contrast-[1.2] object-cover;
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+      animation: none;
+      transform: translateX(0);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  /*
+    Institutional-only readability tuning for presentations.
+    The home page keeps its own sizing; this scope is applied by page wrappers.
+  */
+
+  .institutional-page {
+    --presentation-content-scale: 1.12;
+    --presentation-tag-scale: 1.06;
+  }
+
+  .pregrado-page {
+    --presentation-content-scale: 1.1;
+    --presentation-tag-scale: 1.03;
+  }
+
+  .institutional-page [class*='font-serif'][class*='lowercase'] {
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em;
+  }
+
+  .pregrado-page [class*='font-serif'][class*='lowercase'] {
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em;
+  }
+
+
+  .institutional-page :is(p, li, small, td, th)[class*='text-xs'],
+  .institutional-page :is(p, li, small, td, th)[class*='text-sm'],
+  .institutional-page :is(p, li, small, td, th)[class*='text-[12px]'],
+  .institutional-page :is(p, li, small, td, th)[class*='text-[13px]'] {
+    font-size: calc(0.875rem * var(--presentation-content-scale)) !important;
+    line-height: 1.42 !important;
+  }
+
+  .pregrado-page :is(p, li, small, td, th)[class*='text-xs'],
+  .pregrado-page :is(p, li, small, td, th)[class*='text-sm'],
+  .pregrado-page :is(p, li, small, td, th)[class*='text-[12px]'],
+  .pregrado-page :is(p, li, small, td, th)[class*='text-[13px]'] {
+    font-size: calc(0.875rem * var(--presentation-content-scale)) !important;
+    line-height: 1.44 !important;
+  }
+
+  .institutional-page :is(span, p, button, a, div)[class*='text-[8px]'][class*='uppercase'],
+  .institutional-page :is(span, p, button, a, div)[class*='text-[9px]'][class*='uppercase'],
+  .institutional-page :is(span, p, button, a, div)[class*='text-[10px]'][class*='uppercase'],
+  .institutional-page :is(span, p, button, a, div)[class*='text-[11px]'][class*='uppercase'] {
+    font-size: calc(0.625rem * var(--presentation-tag-scale)) !important;
+    line-height: 1.2 !important;
+  }
+
+  .pregrado-page :is(span, p, a)[class*='text-[8px]'][class*='uppercase'],
+  .pregrado-page :is(span, p, a)[class*='text-[9px]'][class*='uppercase'],
+  .pregrado-page :is(span, p, a)[class*='text-[10px]'][class*='uppercase'],
+  .pregrado-page :is(span, p, a)[class*='text-[11px]'][class*='uppercase'] {
+    font-size: calc(0.625rem * var(--presentation-tag-scale)) !important;
+    line-height: 1.22 !important;
+  }
+
+  @media (max-width: 1024px) {
+    .institutional-page {
+      --presentation-content-scale: 1.08;
+      --presentation-tag-scale: 1.02;
+    }
+
+    .pregrado-page {
+      --presentation-content-scale: 1.06;
+      --presentation-tag-scale: 1.01;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+    background:
+      radial-gradient(circle at top, rgba(0, 83, 156, 0.12), transparent 34%),
+      linear-gradient(180deg, #f8fbff 0%, #ffffff 42%, #f1f5f9 100%);
+    color: #475569;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(0, 83, 156, 0.18);
+    color: #00233f;
+  }
+}
