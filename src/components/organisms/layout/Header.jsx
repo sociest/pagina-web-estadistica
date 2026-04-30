@@ -102,8 +102,8 @@ const defaultNavigationItems = [
     accent: '#00447e',
     align: 'right',
     children: [
-      { label: 'Biblioteca Especializada', href: 'https://koha.umsa.bo/catalog?collection=estadistica' },
-      { label: 'Banco de Datos (Censos y Encuestas)', href: '#recursos-banco-datos' },
+      { label: 'Biblioteca Especializada', href: '/recursos/biblioteca' },
+      { label: 'Banco de Datos (Censos y Encuestas)', href: '/recursos/banco-datos' },
       { label: 'Revistas y Publicaciones', href: '/investigacion/revista-varianza' },
       { label: 'Repositorio de Tesis y Proyectos (Cyber-Tesis)', href: '#recursos-repositorio-tesis' },
       { label: 'Documentos Digitales', href: '/documentos' },
