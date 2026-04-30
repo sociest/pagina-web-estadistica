@@ -30,6 +30,8 @@ import InvestigacionServiciosPage from '../pages/InvestigacionServiciosPage'
 import InvestigacionContactoPage from '../pages/InvestigacionContactoPage'
 import RecursosBibliotecaPage from '../pages/RecursosBibliotecaPage'
 import RecursosBancoDatosPage from '../pages/RecursosBancoDatosPage'
+import RecursosRevistasPage from '../pages/RecursosRevistasPage'
+import RecursosTesisPage from '../pages/RecursosTesisPage'
 
 export const pageRegistry = [
   { path: '/', component: LandingPage },
@@ -68,6 +70,8 @@ export const pageRegistry = [
   { path: '/investigacion/contacto', component: InvestigacionContactoPage },
   { path: '/recursos/biblioteca', component: RecursosBibliotecaPage },
   { path: '/recursos/banco-datos', component: RecursosBancoDatosPage },
+  { path: '/recursos/revistas', component: RecursosRevistasPage },
+  { path: '/recursos/tesis', component: RecursosTesisPage },
   { path: '/contacto', component: ContactPage },
   { path: '/pregrado/perfil-profesional', component: PregradoProfessionalProfilePage },
   { path: '/pregrado/malla-curricular', component: PregradoCurriculumPage },

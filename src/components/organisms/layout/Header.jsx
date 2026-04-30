@@ -104,8 +104,8 @@ const defaultNavigationItems = [
     children: [
       { label: 'Biblioteca Especializada', href: '/recursos/biblioteca' },
       { label: 'Banco de Datos (Censos y Encuestas)', href: '/recursos/banco-datos' },
-      { label: 'Revistas y Publicaciones', href: '/investigacion/revista-varianza' },
-      { label: 'Repositorio de Tesis y Proyectos (Cyber-Tesis)', href: '#recursos-repositorio-tesis' },
+      { label: 'Revistas y Publicaciones', href: '/recursos/revistas' },
+      { label: 'Repositorio de Tesis y Proyectos (Cyber-Tesis)', href: '/recursos/tesis' },
       { label: 'Documentos Digitales', href: '/documentos' },
     ],
   },
