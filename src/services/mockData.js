@@ -123,7 +123,7 @@ export const mockNavItems = [
       { label: 'Banco de Datos (Censos y Encuestas)', href: '/recursos/banco-datos' },
       { label: 'Revistas y Publicaciones', href: '/recursos/revistas' },
       { label: 'Repositorio de Tesis y Proyectos (Cyber-Tesis)', href: '/recursos/tesis' },
-      { label: 'Documentos Digitales', href: '/documentos' },
+      { label: 'Documentos Digitales', href: '/recursos/documentos' },
     ],
   },
   {
