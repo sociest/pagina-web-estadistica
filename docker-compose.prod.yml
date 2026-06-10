@@ -1,0 +1,4 @@
+services:
+  app:
+    image: ghcr.io/sociest/pagina-web-estadistica:latest
+    restart: unless-stopped
